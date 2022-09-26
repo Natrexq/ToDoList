@@ -16,6 +16,10 @@ var Todo = (function () {
     function MakeDv() {
       var newList = document.createElement("div");
       newList.className = "tdel";
+      newList.style.transition = "opacity 300ms";
+      setTimeout(() => {
+        newList.style.opacity = "100%";
+      }, 400);
       var h2name = document.createElement("h2");
       var h2msg = document.createElement("h2");
       var delbut = document.createElement("button");
@@ -30,11 +34,17 @@ var Todo = (function () {
       todols.appendChild(newList);
 
       function TdRemoveChild() {
-        todols.removeChild(newList);
+        newList.style.transition = "opacity 400ms";
+        setTimeout(() => {
+          newList.style.opacity = "0%";
+          setTimeout(() => {
+            todols.removeChild(newList);
+          }, 400);
+        }, 300);
       }
 
       if (todols.children.length > 9) {
-        alert("aaaaaaaaaa");
+        alert("You can't add more notes to list!");
         TdRemoveChild();
       } else {
         //
