@@ -126,7 +126,7 @@ body {
     width: 2rem;
     height: 2rem;
     display: flex;
-    background-image: url('/css/delete.png');
+    background-image: url('css/delete.png');
     background-size: cover;
     background-position-x: 50%;
     border: none;
@@ -176,7 +176,7 @@ body {
 .home span {
     width: 100%;
     height: 100%;
-    background-image: url('/css/home.png');
+    background-image: url('css/home.png');
     background-size: cover;
 }
 
@@ -214,7 +214,7 @@ body {
     width: clamp(2rem, 2.6rem, 4vw);
 
     height: clamp(2rem, 2.5rem, 4vw);
-    background-image: url('/css/githublogo.png');
+    background-image: url('css/githublogo.png');
     background-size: cover;
 
 
@@ -224,7 +224,7 @@ body {
     width: clamp(3rem, 3.6rem, 4vw);
 
     height: clamp(3rem, 3.5rem, 4vw);
-    background-image: url('/css/instalogo.png');
+    background-image: url('css/instalogo.png');
     background-size: cover;
     background-position-y: 50%;
 }
@@ -233,7 +233,7 @@ body {
     width: clamp(2rem, 2.6rem, 4vw);
 
     height: clamp(2rem, 2.6rem, 4vw);
-    background-image: url('/css/fblogo.png');
+    background-image: url('css/fblogo.png');
     background-size: cover;
 }
 
