@@ -1,1 +1,320 @@
 /*Index css*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&family=Lato:ital,wght@0,300;1,300;1,400;1,700&family=Libre+Baskerville&family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&family=Poppins:ital,wght@1,200&family=Raleway:ital,wght@0,300;0,600;1,400&family=Roboto:ital,wght@0,500;1,300&family=Slabo+13px&display=swap');
+/*
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Slabo 13px', serif;
+*/
+
+:root {
+    --clwhite1: #ededed;
+    --cldark1: #303136;
+    --cldark2: #191919;
+    --cldark3: #1b1c1e;
+    --cldark4: : #2c333f;
+    --clbldark2: #162c35;
+
+    --fontmont: 'Montserrat', sans-serif;
+
+}
+*{
+    outline: none;
+}
+
+body {
+    background-color: var(--clwhite1);
+    margin: 0;
+    height: clamp(41.7rem, 58.55rem, 59vw);
+    /* font-family: var(--fontmont);*/
+}
+
+.site {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    width: clamp(23.5rem, 40rem, 50vw);
+    height: clamp(41.7rem, 50rem, 51vw);
+    background-color: #f8f8f8;
+    background-image: linear-gradient(to right, #f8f8f8, #ececec);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav {
+    border-radius: 1rem;
+    width: 100%;
+    height: clamp(8rem, 10rem, 11vw);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(#8d7dde, #9d8df1);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.todo {
+    width: 95%;
+    height: clamp(33.8rem, 39.9rem, 45vw);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+        .tdel{
+            width: 100%;
+            height: 10%;
+            background-color: var(--clwhite1);
+            border: 2px solid #dcdcdc;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+        }
+            .tdnm{
+                width: 20%;
+                height: 80%;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: var( --fontmont);
+                font-weight: normal;
+                font-size: clamp(1rem,1.2rem,1.4vw);
+            }
+            .tdtx{
+                width: 58%;
+                height: 80%;
+                
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-family: var( --fontmont);
+                font-weight: normal;
+                font-size: clamp(0.9rem,1.1rem,1.2vw);
+                padding-inline: 1rem;
+
+
+            }
+            .delbut{
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                background-image: url('/css/delete.png');
+                background-size: cover;
+                background-position-x: 50%;
+                border: none;
+            }
+
+.navwl {
+    width: 100%;
+    height: clamp(5.5rem, 6rem, 6.5vw);
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.navelem1 {
+    height: clamp(5.5rem, 6rem, 6.5vw);
+    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4rem;
+
+}
+
+.navelem2 {
+    height: clamp(5.5rem, 6rem, 6.5vw);
+    width: clamp(10rem, 18rem, 22vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.home {
+    width: clamp(2rem, 2.4rem, 3vw);
+    height: clamp(2rem, 2.4rem, 3vw);
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+    display: flex;
+}
+
+.home span {
+    width: 100%;
+    height: 100%;
+    background-image: url('/css/home.png');
+    background-size: cover;
+}
+
+.navwl div.ls_text {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.scmedia {
+
+    gap: 0.1rem;
+    width: 100%;
+    height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.5rem, 1rem, 1.1vw);
+}
+
+.scmedia span {
+    width: clamp(2rem, 3.5rem, 4vw);
+
+    height: clamp(2rem, 3rem, 4vw);
+
+
+}
+
+#github {
+    width: clamp(2rem, 2.6rem, 4vw);
+
+    height: clamp(2rem, 2.5rem, 4vw);
+    background-image: url('/css/githublogo.png');
+    background-size: cover;
+
+
+}
+
+#insta {
+    width: clamp(3rem, 3.6rem, 4vw);
+
+    height: clamp(3rem, 3.5rem, 4vw);
+    background-image: url('/css/instalogo.png');
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+#facebook {
+    width: clamp(2rem, 2.6rem, 4vw);
+
+    height: clamp(2rem, 2.6rem, 4vw);
+    background-image: url('/css/fblogo.png');
+    background-size: cover;
+}
+
+
+.navwl h1 {
+    margin: 0;
+    color: #ededed;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: clamp(1.6rem, 1.8rem, 2vw);
+}
+
+.navwl h2 {
+    margin: 0;
+    color: #ededed;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: clamp(1rem, 1.2rem, 1.4vw);
+}
+
+
+.nav_el {
+    background-color: #41463d;
+    display: flex;
+
+    width: 100%;
+    height: clamp(3.5rem, 4rem, 5vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    }
+    .nav_el button{
+        height: clamp(1.6rem,2.2rem,2.3vw);
+        background-color: var(--clwhite1);
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: clamp(0.2rem,0.4rem,0.5vw);
+        -webkit-border-radius: clamp(0.2rem,0.4rem,0.5vw);
+        -moz-border-radius: clamp(0.2rem,0.4rem,0.5vw);
+        -ms-border-radius: clamp(0.2rem,0.4rem,0.5vw);
+        -o-border-radius: clamp(0.2rem,0.4rem,0.5vw);
+}
+    input.namems{
+        width: clamp(4rem,5rem,5.1vw);
+        height: 40%;
+        font-family: var( --fontmont);
+        text-align: center;
+        border-radius: clamp(0.3rem,0.6rem,0.7vw);
+        -webkit-border-radius: clamp(0.3rem,0.6rem,0.7vw);
+        -moz-border-radius: clamp(0.3rem,0.6rem,0.7vw);
+        -ms-border-radius: clamp(0.3rem,0.6rem,0.7vw);
+        -o-border-radius: clamp(0.3rem,0.6rem,0.7vw);
+        border: none;
+    }
+    input.message{
+       border: none;
+       width: clamp(8rem,10rem,10.1vw);
+       font-family: var( --fontmont);
+       height: 40%;
+       text-align: center;
+       border-radius: clamp(0.3rem,0.6rem,0.7vw);
+       -webkit-border-radius: clamp(0.3rem,0.6rem,0.7vw);
+       -moz-border-radius: clamp(0.3rem,0.6rem,0.7vw);
+       -ms-border-radius: clamp(0.3rem,0.6rem,0.7vw);
+       -o-border-radius: clamp(0.3rem,0.6rem,0.7vw);
+       border: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .list {
+        border-radius: 0rem;
+        -webkit-border-radius: 0rem;
+        -moz-border-radius: 0rem;
+        -ms-border-radius: 0rem;
+        -o-border-radius: 0rem;
+    }
+
+    .nav {
+        border-radius: 0rem;
+        -webkit-border-radius: 0rem;
+        -moz-border-radius: 0rem;
+        -ms-border-radius: 0rem;
+        -o-border-radius: 0rem;
+    }
+
+
+
+}
