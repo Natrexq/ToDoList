@@ -67,7 +67,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(#8d7dde, #9d8df1);
+    background-image: linear-gradient(#134838, #134826);
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
@@ -75,12 +75,14 @@ body {
 }
 
 .todo {
+
     width: 95%;
     height: clamp(33.8rem, 39.9rem, 45vw);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    gap: 0.3rem;
 }
 
 .tdel {
@@ -93,6 +95,11 @@ body {
     align-items: center;
     gap: 1rem;
     opacity: 0%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 .tdnm {
@@ -130,6 +137,7 @@ body {
     background-size: cover;
     background-position-x: 50%;
     border: none;
+    margin-inline: 2rem;
 }
 
 .navwl {
@@ -178,6 +186,19 @@ body {
     height: 100%;
     background-image: url('home.png');
     background-size: cover;
+    transition: transform 400ms;
+    -webkit-transition: transform 400ms;
+    -moz-transition: transform 400ms;
+    -ms-transition: transform 400ms;
+    -o-transition: transform 400ms;
+}
+
+.home span:hover {
+    transform: scale(120%);
+    -webkit-transform: scale(120%);
+    -moz-transform: scale(120%);
+    -ms-transform: scale(120%);
+    -o-transform: scale(120%);
 }
 
 .navwl div.ls_text {
@@ -203,11 +224,21 @@ body {
 }
 
 .scmedia span {
+    transition: transform 400ms;
+    -webkit-transition: transform 400ms;
+    -moz-transition: transform 400ms;
+    -ms-transition: transform 400ms;
+    -o-transition: transform 400ms;
+}
+
+.scmedia span:hover {
     width: clamp(2rem, 3.5rem, 4vw);
-
     height: clamp(2rem, 3rem, 4vw);
-
-
+    transform: scale(110%);
+    -webkit-transform: scale(110%);
+    -moz-transform: scale(110%);
+    -ms-transform: scale(110%);
+    -o-transform: scale(110%);
 }
 
 #github {
@@ -256,7 +287,7 @@ body {
 
 
 .nav_el {
-    background-color: #41463d;
+    background-color: #191919;
     display: flex;
 
     width: 100%;
@@ -279,9 +310,40 @@ body {
     -o-border-radius: clamp(0.2rem, 0.4rem, 0.5vw);
 }
 
+.nav_el input {
+    opacity: 90%;
+    transition: opacity 500ms, padding-inline 300ms;
+    -webkit-transition: opacity 500ms, padding-inline 300ms;
+    -moz-transition: opacity 500ms, padding-inline 300ms;
+    -ms-transition: opacity 500ms, padding-inline 300ms;
+    -o-transition: opacity 500ms, padding-inline 300ms;
+}
+
+.nav_el button {
+    opacity: 96%;
+    transition: opacity 500ms;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+}
+
+.nav_el input:hover {
+    opacity: 100%;
+
+}
+
+.nav_el input:focus {
+    padding-inline: 1rem;
+}
+
+.nav_el button:hover {
+    opacity: 100%;
+}
+
 input.namems {
-    width: clamp(4rem, 5rem, 5.1vw);
-    height: 40%;
+    width: clamp(5rem, 5rem, 5.1vw);
+    height: clamp(1.4rem, 1.8rem, 2.3vw);
     font-family: var(--fontmont);
     text-align: center;
     border-radius: clamp(0.3rem, 0.6rem, 0.7vw);
@@ -294,9 +356,9 @@ input.namems {
 
 input.message {
     border: none;
-    width: clamp(8rem, 10rem, 10.1vw);
+    width: clamp(8rem, 13rem, 14.1vw);
     font-family: var(--fontmont);
-    height: 40%;
+    height: clamp(1.4rem, 1.8rem, 2.3vw);
     text-align: center;
     border-radius: clamp(0.3rem, 0.6rem, 0.7vw);
     -webkit-border-radius: clamp(0.3rem, 0.6rem, 0.7vw);
@@ -304,6 +366,7 @@ input.message {
     -ms-border-radius: clamp(0.3rem, 0.6rem, 0.7vw);
     -o-border-radius: clamp(0.3rem, 0.6rem, 0.7vw);
     border: none;
+    font-size: clamp(0.8rem, 1rem, 2vw);
 }
 
 
