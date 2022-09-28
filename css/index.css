@@ -28,7 +28,7 @@ font-family: 'Slabo 13px', serif;
 }
 
 body {
-    background-color: var(--clwhite1);
+   
     margin: 0;
     height: clamp(41.7rem, 58.55rem, 59vw);
     /* font-family: var(--fontmont);*/
@@ -36,13 +36,35 @@ body {
 
 .site {
     width: 100%;
-    height: 100%;
+    height: clamp(41.7rem, 58.55rem, 59vw);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('rainyforest.jpg');
+    background-size: cover;
+   
+}
+.siteback{
+    background-image: url('rainyforest.jpg');
+    background-size: cover;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: filter 500ms;
+    -webkit-transition: filter 500ms;
+    -moz-transition: filter 500ms;
+    -ms-transition: filter 500ms;
+    -o-transition: filter 500ms;
+}
+.siteback:hover{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
 
 .list {
+    position: relative;
     width: clamp(23.5rem, 40rem, 50vw);
     height: clamp(41.7rem, 50rem, 51vw);
     background-color: #f8f8f8;
@@ -137,7 +159,7 @@ body {
     background-size: cover;
     background-position-x: 50%;
     border: none;
-    margin-inline: 2rem;
+    margin-inline: clamp(0.1rem,1rem,1.1vw);
 }
 
 .navwl {
