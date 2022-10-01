@@ -30,7 +30,7 @@ font-family: 'Slabo 13px', serif;
 body {
    
     margin: 0;
-    height: clamp(58.55rem, 58.55rem, 79vw);
+    height: clamp(45.55rem, 58.55rem, 79vw);
     background-image: url('rainyforest.jpg');
     background-size: cover;
     /* font-family: var(--fontmont);*/
@@ -53,7 +53,7 @@ body {
     filter: blur(4px);
     -webkit-filter: blur(4px);
     width: 100%;
-    height: clamp(58.55rem, 58.55rem, 79vw);
+    height: clamp(45.55rem, 58.55rem, 79vw);
     position: absolute;
     transition: filter 500ms;
     -webkit-transition: filter 500ms;
