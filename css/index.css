@@ -26,23 +26,27 @@ font-family: 'Slabo 13px', serif;
 * {
     outline: none;
 }
-
-body {
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: clamp(45.55rem, 58.55rem, 79vw);
    
     margin: 0;
-    height: clamp(45.55rem, 58.55rem, 79vw);
     background-image: url('rainyforest.jpg');
     background-size: cover;
-    /* font-family: var(--fontmont);*/
-   
 }
 
+
 .site {
+    position: relative;
     width: 100%;
-    height: 100%;
+       height: clamp(45.55rem, 58.55rem, 79vw);
     display: flex;
     justify-content: center;
     align-items: center;
+   
+    z-index: 4;
+
     
     
    
@@ -53,7 +57,7 @@ body {
     filter: blur(4px);
     -webkit-filter: blur(4px);
     width: 100%;
-    height: clamp(45.55rem, 58.55rem, 79vw);
+    height: 100%;
     position: absolute;
     transition: filter 500ms;
     -webkit-transition: filter 500ms;
@@ -410,6 +414,28 @@ input.message {
         -moz-border-radius: 0rem;
         -ms-border-radius: 0rem;
         -o-border-radius: 0rem;
+    }
+
+
+
+}
+@media screen and (max-width: 1000px) {
+    .list {
+        position: relative;
+        width: clamp(43.5rem, 44rem, 50vw);
+        height: clamp(41.7rem, 50rem, 51vw);
+        background-color: #f8f8f8;
+        background-image: linear-gradient(to right, #f8f8f8, #ececec);
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
     }
 
 
