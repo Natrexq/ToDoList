@@ -56,13 +56,33 @@ var Todo = (function () {
   };
 
   const Check = () => {
-    if (nameval.value == "") {
-      alert("First Please type name of note!");
-    }
-    if (messageval.value == "") {
-      alert("Please write something in text box for message!");
+    const win = window.screen.width;
+    if (win < 400) {
+      if (nameval.value == "") {
+        alert("First Please type name of note!");
+      } else if (messageval.value == "") {
+        alert("Please write something in text box for message!");
+      } else {
+        if (nameval.value.length > 8) {
+          alert(
+            "Sorry, but on the mobile you can't type more than 8 words in name"
+          );
+        } else if (messageval.value.length > 18) {
+          alert(
+            "Sorry, but on the mobile you can't type more than 17 words in message"
+          );
+        } else {
+          AddToDoEl();
+        }
+      }
     } else {
-      AddToDoEl();
+      if (nameval.value == "") {
+        alert("First Please type name of note!");
+      } else if (messageval.value == "") {
+        alert("Please write something in text box for message!");
+      } else {
+        AddToDoEl();
+      }
     }
   };
   addit.addEventListener("click", Check);
