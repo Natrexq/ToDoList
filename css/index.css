@@ -23,6 +23,16 @@ font-family: 'Slabo 13px', serif;
 
 }
 
+::-moz-selection {
+    color: var(--clwhite1);
+    background: #1d9147;
+}
+
+::selection {
+    color: var(--clwhite1);
+    background: #1d9147;
+}
+
 * {
     outline: none;
 }
@@ -81,7 +91,7 @@ body {
 .list {
     position: relative;
     width: clamp(23.5rem, 40rem, 50vw);
-    height: clamp(41.7rem, 50rem, 51vw);
+    height: clamp(42.7rem, 52rem, 53vw);
     background-color: #f8f8f8;
     background-image: linear-gradient(to right, #f8f8f8, #ececec);
     border-radius: 1rem;
@@ -114,7 +124,7 @@ body {
 .todo {
 
     width: 95%;
-    height: clamp(33.8rem, 39.9rem, 45vw);
+    height: clamp(35.8rem, 39.9rem, 45vw);
     display: flex;
     justify-content: flex-start;
     align-items: center;
